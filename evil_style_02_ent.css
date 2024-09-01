@@ -1,0 +1,75 @@
+@font-face { font-family: 'gsm'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+.blank {height: 160px;}
+.gsm {font-family: gsm;}
+
+body {font-family: "맑은 고딕"; font-size: 13px; line-height: 1.6; color: #666;}
+/*줄여서 font : 13px/1.6 "맑은 고딕" 으로 가능*/
+
+.wrap {width: 1000px; margin: 0 auto; position: relative;}
+ul:after, .wrap:after, .cl:after {content: ''; clear: both; display: block;}
+.blind {position: absolute;left: -9999px; width: 0; height: 0; font-size: 0; overflow: hidden;}
+
+header {border-bottom: 1px solid #ddd; height: 160px; position: fixed; width: 100%; z-index: 99; background: #fff;}
+header h1 {padding-top: 30px;}
+header .snb {position: absolute; top: 32px; right: 0;}
+header .snb li {float: left; margin-left: 24px; font-size: 12px;}
+
+
+header .gnb {position: absolute; top: 106px; right: 0;}
+header .gnb li {float: left; font :900 14px gsm; text-transform: uppercase; margin-left: 55px;}
+header .gnb li a:visited,
+header .gnb li a:link {color: #000;}
+header .gnb li a:focus,
+header .gnb li a:hover,
+header .gnb li a:active {color: #c61f27;}
+
+
+
+#main {background: url(images/evil/mainimg%20copy.jpg) no-repeat center #fff; height: 480px; color: #111;} 
+#main h3 {font-family: gsm; letter-spacing: 1px; padding-top: 110px; font-size: 14px; color: #c61f27;}
+/*letter-spacing 글자 자간*/
+#main dl {margin-top: 5px; font-family: "Noto Sans KR";}
+#main dt {font-size: 44px; font-weight: 700; color: #c61f27;}
+#main dd {font-size: 15px; margin-top: 30px; font-weight: 600; font-size: 18px;}
+
+#cont {padding: 60px 0;}
+#cont h3 {text-transform: uppercase; color: #000; font-weight: bold; letter-spacing: 1px; font-size: 14px; margin-bottom: 20px;}
+
+
+#cont  .top ul li {float: left; width: 300px; margin-right: 50px; border-bottom: 3px solid #000; height: 300px;}
+#cont  .top ul li:last-child {margin-right: 0;}
+#cont  .top dl {margin-top: 15px;}
+#cont  .top dl dt {font-size: 14px; font-weight: bold; color: #000;}
+#cont  .top dl dd {margin-top: 10px;}
+
+#cont .mid {margin-top: 60px;}
+#cont .mid article {float: left;}
+#cont .mid article:first-child {width: 650px;}
+#cont .mid article:first-child h3 {position: absolute; color: #fff; top: 10px; left: 10px; font-size: 18px;}
+#cont .mid article:last-child {width: 300px; margin-left: 50px; border-bottom: 1px solid #000; height: 193px; box-sizing: border-box;}
+#cont .mid article ul li {margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+#cont .bot {margin-top: 60px;}
+#cont .bot article {width: 300px; float: left; margin-right: 50px; border-bottom: 1px solid #ccc; padding-bottom: 30px;}
+#cont .bot article:last-child {margin-right: 0;}
+#cont .bot article > a {color: #000; margin-top: 20px; display: inline-block; border-bottom: 1px solid #000; margin-bottom: 1px;}
+/*text-decoration: underline를 줘도 되지만 border로 줄수도 있다*/
+
+footer {padding: 50px 0; background: #222; color: #ccc;}
+
+footer .info li {float: left; }
+footer .info li:after {content: '|'; margin: 0 14px; font-size: 12px; position: relative; top: -2px;}
+footer .info li:last-child:after {display: none;}
+
+footer address {margin-top: 20px; font-style: normal;}
+
+
+footer .sns {text-transform: uppercase; position: absolute; right: 0; top: 0; text-align: right; color: #c61f27;}
+
+footer .sns li {margin-bottom: 8px;}
+
